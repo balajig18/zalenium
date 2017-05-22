@@ -1,3 +1,4 @@
+
 package de.zalando.ep.zalenium.util;
 
 import de.zalando.ep.zalenium.proxy.DockerSeleniumStarterRemoteProxy;
@@ -28,6 +29,7 @@ public class ZaleniumCapabilityMatcher extends DefaultCapabilityMatcher {
 
     @Override
     public boolean matches(Map<String, Object> nodeCapability, Map<String, Object> requestedCapability) {
+        
         logger.log(Level.FINE, ()-> String.format("Validating %s in node with capabilities %s", requestedCapability,
                 nodeCapability));
 
